@@ -1,5 +1,9 @@
 secrets.js
 
+.DS_Store
+
+avatars/
+
 # Logs
 logs
 *.log
