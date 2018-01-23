@@ -2,8 +2,6 @@ secrets.js
 
 .env
 
-.DS_Store
-
 avatars/
 
 # Logs

@@ -22,6 +22,10 @@ function saveAvatar(err, body) {
   if (err) throw err;
 
   JSON.parse(body).forEach(user => {
+    if (!fs.existsSync('./avatars/')) {
+      fs.mkdirSync('./avatars/');
+    }
+
     downloadImageByURL(user.avatar_url, ('./avatars/' + user.login + '.png'))
   })
 }
