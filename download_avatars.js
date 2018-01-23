@@ -1,6 +1,7 @@
 request = require('request');
 fs = require('fs');
-token = require('./secrets');
+require('dotenv').config();
+token = process.env.GITHUB_TOKEN;
 var repo = process.argv.slice(2);
 
 if (repo.length !== 2) {
